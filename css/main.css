@@ -1,0 +1,353 @@
+body {
+    font-family:Lato;
+    font-size:13pt;
+    /*font-family: 'Montserrat' !important;*/
+}
+
+p{
+    font-size: 12pt;
+}
+
+.jumbotron {
+	text-align: center;	
+    text-shadow: black 0.3em 0.3em 0.3em;
+	overflow:hidden;
+}
+
+.inverse {
+	background-color:#35404f !important;
+	color: white !important;
+}
+
+.gray {
+    background-color: #d1e0e0;
+}
+
+.default {
+	background-color:white;
+	color: black;
+}
+
+.default hr {
+    border-color: #35404f;
+}
+
+.container {
+	padding-bottom: 100px;
+	padding-top:50px;
+}
+
+hr {
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	padding-bottom: 10px;
+}
+
+#bio h1 {
+    padding-top: 30pt;
+}
+
+#bio img{
+    padding:10pt;
+    max-width: 700px;
+}
+
+#bio p{
+    padding: 10pt;
+}
+
+#bio .links{
+    text-align: center;
+}
+
+#bio .links a{
+    padding: 20px;
+}
+
+.projects {
+    size:100%;
+    padding: 0;
+    margin: 0;
+}
+
+.projects ul {
+    list-style: none;
+    width: 99%;
+    margin: auto;
+}
+.projects li {
+    margin: 5px;
+    margin-bottom: 15px;
+    font-size:12pt;
+    display:block;
+    float: left;
+    height:260px;
+    width: 260px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.centered {
+    align-items: center;
+}
+.projects .project1 {
+    background: #a3d39c;
+}
+.projects .project2 {
+    background: #7accc8;
+}
+.projects .project3 {
+    background: #4aaaa5;
+}
+.projects .project4 {
+    background: #35404f;
+}
+
+.projects a li {
+    color:#eee;
+    font-size:22pt;
+    text-decoration: none;
+    display: block;
+    padding:15px;
+}
+.projects li i {
+    margin-top: 50px;
+    color:#fff;
+    padding:0 10px;
+}
+.projects li b {
+    font-family: Lato;
+    margin-top: 40px;
+    padding: 15px 0;
+    display: none;
+}
+.projects a:hover {
+    color: #fff;
+}
+.projects li:hover i {
+    display: none;
+}
+.projects li:hover b {
+    display: block;
+}
+
+#highlight a {
+    color: black;
+}
+
+#highlight .item{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#highlight .cogs{
+   color:#a3d39c;
+}
+
+#highlight .group{
+    color:#7accc8;
+}
+
+#highlight .play{
+    color:#4aaaa5;
+}
+
+#highlight .button{
+    text-align:  center;
+}
+
+#resHigh a{
+    color:black;
+}
+
+.button{
+    text-align: center;
+    width: 100%;
+} 
+
+#contact{
+    background-color: #D1D1D1;
+    padding-bottom: 50px;
+}
+
+.carosel-inner{
+	transition: 20.0s ease-in-out left;
+}
+
+.carousel-inner .item img,
+.carousel-inner .item a img{
+      height: 100%;
+	  max-height: 400px;
+      margin: auto;
+	  position: relative;
+	  display: block;
+ }
+
+#slide1,#slide2,#slide3,#slide4{
+	min-height:500px;
+}
+
+#resHigh p{
+    text-align: center;
+    font-size: 18px;
+}
+
+#resHigh{
+    text-align: center;
+}
+
+#slide1{
+	background-image: url(../img/group.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center center;
+	color: white;
+}
+
+#resHigh .item:hover #slide1{
+	background:
+	linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),
+	url(../img/group.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center center;
+	color: white;
+}
+
+#slide2{
+	background-image: url(../img/cs201.png);
+	background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center center;
+	color: black;
+}
+
+#resHigh .item:hover #slide2{
+	background:
+	linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),
+	url(../img/cs201.png);
+	background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center center;
+	color: white;
+}
+
+#slide3{
+	background-image: url(../img/wind_symph.jpeg);
+	background-size: cover;
+    background-repeat: no-repeat;
+	background-position: bottom center;
+	color: white;
+}
+
+#resHigh .item:hover #slide3{
+	background:
+	linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),
+	url(../img/wind_symph.jpeg);
+	background-size: cover;
+    background-repeat: no-repeat;
+	background-position: bottom center;
+	color: white;
+}
+
+#slide4{
+	background-image: url(../img/little_bits.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center center;
+	color: black;
+}
+
+#resHigh .item:hover #slide4{
+	background:
+	linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),
+	url(../img/little_bits.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center center;
+	color: white;
+}
+
+#resHigh .item h2{
+	padding-top: 150px;
+	display:block;
+}
+
+#resHigh .item p{
+	display:none;
+}
+
+#resHigh .item:hover h2{
+	display:none;
+}
+
+#resHigh .item:hover p{
+	display:inline-block;
+	max-width: 600px;
+}
+
+
+form{
+    text-align: center;
+}
+
+form input{
+    width: 100%;
+}
+
+input.btn{
+    width: 30%;
+    background-color: #a3d39c; 
+}
+
+input.btn:hover{
+    background-color: #8AB384;
+}
+
+.footer{
+    color:#777;;
+    background-color:#222222;
+    text-align: center;
+}
+
+.footer ul{
+    text-align: center;
+    list-style:none;
+    margin:10px;
+    padding:10px;
+}
+
+.footer li{
+    display:inline;
+    padding:10px;
+}
+
+.footer a{
+    color:#777;
+}
+
+.footer a:hover{
+    color:white;
+}
+
+.footer .footer-col{
+    padding-top: 15px;
+}

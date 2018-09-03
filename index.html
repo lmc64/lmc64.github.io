@@ -1,1 +1,473 @@
-"Hello world" 
+
+<!DOCTYPE html>
+	
+<html lang="en">
+<head>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="my supercool webpage hopefully">
+	<meta name="author" content="Larissa Cox">
+	<title>Larissa's Webpage</title>
+	
+	<!-- My CSS and JS -->
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">>
+	
+	<!--JQuery JS-->
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	 
+	<!--Bootstrap JS-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<!--Font Awesome Fonts and Icons-->
+	<script src="https://use.fontawesome.com/f9ba6b20c2.js"></script> 
+
+	<!--Google Web Fonts-->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato">
+	
+	
+	
+</head>
+
+<body>
+	
+	<!--Navigation-->
+	
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNav">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		</div>
+		<div class="collapse navbar-collapse" id="myNav">
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="#">Home</a></li>
+			<li><a href="#bio">About</a></li>
+			<li><a href="#highlight">What I Do</a></li>
+			<li><a href="#portfolio">Projects</a></li>
+			<li><a href="#foot">Contact</a></li>
+		</ul>
+		
+		</div>
+	</div>
+	</nav>
+
+	<!--Header-->
+	
+	<div class="jumbotron inverse">
+		<div class="container">
+			<img class="img-circle" src="img/professional_square.jpg" height="400px">
+			<h1>Larissa Cox</h1>
+			<hr>
+			<p>	<span> Software Developer - </span>
+				<span>Program Manager </span>
+				<span>- Student </span>
+				<span>- Teacher </span>
+				</p>
+		</div>
+	</div>
+	
+<!--About-->
+<div class="default" id="bio">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 text-center">
+				<img class="img" src="img/standing_wide.jpg" width="100%">
+			</div>
+			<div class="col-lg-6">
+				<h1 align="center">Hi, I'm Larissa Cox </h1>
+				<p align="center">I'm a web designer, developer, and program manager with experience at organizations such as Microsoft and the Duke Center for Instructional Technology.
+					<br><br> 
+					I'm currently a Senior at Duke University pursuing a Bachelor of Science in Computer Science and a minor in Gender Studies, and looking for a full-time position as a software engineer or product manager.
+				</p> 
+			</div>
+			<div class="col-sm-1">
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--Highlights-->
+	<div class="inverse" id="highlight">
+		<div class="container">
+			<h1>What I Do</h1>
+			<hr>
+			<div class="row">
+				<div class="col-sm-6 item">
+					<i class="icon cogs fa fa-windows fa-5x"></i>
+					<h3>Work</h3>
+					<p>This past summer, I interned at Microsoft as a Program Manager, where I worked the project lead of a group of 5 developers. I have also worked as a Teaching Assistant
+						for the Duke Department of Computer Science, and I am currently working as a part time software developer at the Duke Center for Instructional Technology.</p> 
+				</div>
+				<div class="col-sm-6 item">
+					<i class="icon group fa fa-group fa-5x"></i>
+					<h3>Leadership</h3>
+					<p>I am a past-president and founding member of the pre-professional/social tech organization Catalyst. I was a driving force behind the growth of the organization, which grew 
+						from 18 members to more than 50 members during my time as president. I am also a section leader and social chair in the Duke Wind Symphony, where I plan and organize events.</p>
+				</div>
+			</div>
+			<div class = "row">
+				<div class="col-sm-6 item">
+					<i class="icon group fa fa-heart-o fa-5x"></i>
+					<h3>Volunteering</h3>
+					<p>This year, I am working as a software engineer on developing technology that teaches better sexual assault awareness and bystander training on Duke campus. I have also 
+						volunteered as a teacher of coding classes for kids and a camp counselor.
+					</p> 
+				</div>
+				<div class="col-sm-6 item">
+					<i class="icon play fa fa-music fa-5x"></i>
+					<h3>Music</h3>
+					<p>I am a saxophone player and avid musician, playing in the Duke University Wind Symphony, Duke Saxophone quartet, and in annual solo recitals. I have also performed as a paid 
+						musician for church services and worked teaching private saxophone lessons to students.
+					</p> 
+				</div>
+				
+			</div>
+
+			<a href="files/Larissa_Cox_PMResume.pdf" download="LarissaCoxResume">
+				<div class="button">
+					<input type="get" action="files/LarissaCoxResume2016.pdf" class="btn btn-large"  value="Resume">
+				</div>
+			</a>
+
+		</div>
+	</div>
+
+	
+	<!--Portfolio-->
+	
+	<div class="gray" id="portfolio">
+		<div class="container">
+			<h1>My Portfolio</h1>
+			<hr>
+			<div class="projects">
+				
+				<ul>
+					<a href="#vooga" data-target="#vooga" data-toggle="modal">
+						<li class="project1 img">
+						 <i class="icon fa fa-gamepad fa-4x"></i><b>Game Authoring Environment</b>
+						</li>
+					</a>
+					<a href="#wfw"  data-target="#wfw" data-toggle="modal">
+						<li class="project2 img">
+							<i class="icon fa fa-globe fa-4x"></i><b>WFW Web Portal</b>
+						</li>
+					</a>
+					<a href="#tunder"  data-target="#tunder" data-toggle="modal">
+						<li class="project3 img">
+							<i class="icon fa fa-spotify fa-4x"></i><b>Tunder Music Discovery App</b>
+						</li>
+					</a>
+					<a href="#slogo"  data-target="#slogo" data-toggle="modal">
+						<li class="project3 img">
+							<i class="icon fa fa-edit fa-4x"></i><b>Simple Logo IDE</b>
+						</li>
+					</a>
+					<a href="#cell-society"  data-target="#cell-society" data-toggle="modal">
+						<li class="project1 img">
+							<i class="icon fa fa-th fa-4x"></i><b>Cellular Automata Simulator</b>
+						</li>
+					</a>
+					<a href="#huffman"  data-target="#huffman" data-toggle="modal">
+						<li class="project1 img">
+							<i class="icon fa fa-file-zip-o fa-4x"></i><b>Huffman Compression Suite</b>
+						</li>
+					</a>
+					<a href="#game4good"  data-target="#game4good" data-toggle="modal">
+						<li class="project2 img">
+							<i class="icon fa fa-heartbeat fa-4x"></i><b>Sexual Assault Awareness Game</b>
+						</li>
+					</a>
+					<a href="#nudge"  data-target="#nudge" data-toggle="modal">
+						<li class="project3 img">
+							<i class="icon fa fa-graduation-cap fa-4x"></i><b>Learning Retention App</b>
+						</li>
+					</a>
+				</ul>
+				
+			</div>
+			  
+			  
+		</div>
+	</div>
+	
+	<!-- Portfolio Items -->
+	<div id="vooga" class="modal face" role="dialog">
+		<div class="modal-dialog">
+			
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times</button>
+					<h3 class="modal-title">Game Authoring Environment</h3>
+					<p>Java, JavaFX, XML</p>
+				</div>
+				<div class="modal-body">
+
+							<p>I worked on a team of 10 engineers to develop a game authoring environment desktop application. 
+								The environment allows users to create multi-level games, store them locally on their computer, 
+								load them, play them by themselves or with others, and save their progress.
+							</p>
+							<p>I worked primarily as a back-end engineer for the project but also fulfilled many of the duties of
+								a PM as far as planning and running meetings and prioritizing project features,
+							</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="wfw" class="modal face" role="dialog">
+		<div class="modal-dialog">
+			
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times</button>
+					<h3 class="modal-title">Women for Women Web Portal</h3>
+					<p>C#, Javascript, HTML, CSS</p>
+				</div>
+				<div class="modal-body">
+
+							<p>I worked with a team of 6 to develop a web portal for the organization Women for Women. This 
+								organization connects women in war zones to sponsors who donate money to support them. Our 
+								application used computer vision to read hand-written text in the language of the women being 
+								supported and translate it into the language of their supporters, allowing them to more effectively
+								communicate. </p>
+							<p>I worked primarily as a front-end developer on the project. I also did some of the work of a Program 
+								Manager, functioning as the main point of contact between WFW and my team and leading demos of the 
+								project.
+							</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="tunder" class="modal face" role="dialog">
+		<div class="modal-dialog">
+			
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times</button>
+					<h3 class="modal-title">Tunder Music Discovery Web Application</h3>
+					<p>Javascript, HTML, CSS</p>
+				</div>
+				<div class="modal-body">
+
+							<p>Worked with a team of 4 engineers to develop a web application that provides a users with a new way to interact with
+								music on Spotify The app provides them with previews of the newest tracks and allows them to like or dislike them. The app
+								uses these likes and dislikes to store information about the user's music preferences and then creates playlists based on 
+								these preferences. 
+							</p>
+							<p>I worked as a full-stack developer on the project, both designing page layouts and writing code to interact with Spotify's 
+								public API.
+							</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div id="slogo" class="modal face" role="dialog">
+		<div class="modal-dialog">
+			
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times</button>
+					<h3 class="modal-title">Simple Logo Program</h4>
+				</div>
+				<div class="modal-body">
+					<h4>Java, Java FX</h4>
+					<p>I worked with a team of 3 others to design a turtle based coding environment that uses a
+						 simple version of the Logo programming language.</p>
+						 
+					<p>The program supports function creation, variable 
+						 assignment, and loops with variable iteration patterns. It also allows the user to load 
+						 preset turtle functions and also to save their own functions to file. It also allows the
+						 user to save and load their workspace so that the set of functions they have defined can 
+						 be accessed again when they reload the program. </p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="cell-society" class="modal face" role="dialog">
+		<div class="modal-dialog">
+			
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times</button>
+					<h3 class="modal-title">Cellular Automata Simulator</h4>
+				</div>
+				<div class="modal-body">
+					<h4>Java, Java FX, XML</h4>
+					<p>I worked with a team of 2 others to design a program capable of simulating and displaying
+						several different types of cellular automata. </p>
+
+					<p>Stats about the states of the cells in the 
+						simulation grid are displayed visually on a graph. The user can choose between a fire spreading simulation, a game of life simulation, a 
+						predator-prey simulation, a segregation simulation, and a slime mold simulation. The program
+						gives the user the ability to set multiple variables about the situation being simulated, as 
+						the ability to change the simulation speed, to pause and then resume the simulation, and to
+						move through the simulation step by step.
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="huffman" class="modal face" role="dialog">
+		<div class="modal-dialog">
+			
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times</button>
+					<h3 class="modal-title">Huffman Compression/Decompression Suite</h3>
+					<p>Java</p>
+				</div>
+				<div class="modal-body">
+
+							<p>In a project for my Data Structures and Algorithms course, I implemented a Huffman 
+								coding suite capable of compressing and decompressing files using Huffman trees 
+								and prefix codes.</p>
+							<p>In more recent years, I have taught other students how to code this assignment as a
+								teaching assistant for the Data Structures and Algorithms course.</p>
+					
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="game4good" class="modal face" role="dialog">
+		<div class="modal-dialog">
+			
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times</button>
+					<h3 class="modal-title">Sexual Assault Awareness Game</h4>
+				</div>
+				<div class="modal-body">
+					<h4>IN PROGRESS</h4>
+					<h4>Unity, C#</h4>
+					<p>I worked with a team of 7 engineers and writers to develop a game to raise awareness 
+						about the problem of sexual assault on Duke's campus. The application allows the user 
+						to play from the point of view of a student at Duke and puts them in the position of a 
+						bystander in several difficult situations revolving around sexual harassment and assault.
+						The game is designed to help users understand the unique points of view of their classmates 
+						and learn how to be a positive, active, and safe bystander.</p>
+						 
+					<p>I worked as both a full-stack developer on the game and a writer of the game's content. </p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="nudge" class="modal face" role="dialog">
+		<div class="modal-dialog">
+			
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times</button>
+					<h3 class="modal-title">Ebbinghaus Learning Retention App </h4>
+				</div>
+				<div class="modal-body">
+					<h4>IN PROGRESS</h4>
+					<h4>Javascript, AngularJS, HTML, CSS</h4>
+					<p>I worked on a team of 4 engineers and writers to develop an app that would help students retain 
+						more of the information they learn. The app was specifically designed to combat the Ebbinghaus 
+						forgetting curve, which describes how information is lost over time when it is not used. The app 
+						allows teachers to send reminders to their students in the form of quizzes and gathers information 
+						from students about how well they retain the information that they learn.
+					</p> 
+					<p>I worked as a full-stack developer and program manager on the project. </p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--Contact-->
+	
+	<!--<div class="default" id="contact">
+		<div class="container">
+			<h1>Contact Me</h1>
+			<hr>
+			<form role="form" action="php/mail.php" method="post" name="contact-form">
+				<div class="form-group col-xs-12 ">
+				<input type="text" class="form-control" placeholder="Name" name="name" id="name" required>
+				</div>
+				<div class="form-group col-xs-12 "><input type="email" class="form-control" placeholder="Email" name="email" id="email" required>
+				</div>
+				<div class="form-group col-xs-12 "><textarea class="form-control" name="message" id="message" placeholder="Message" required rows="8" cols="25"></textarea>
+				</div>
+				<div class="form-group col-xs-12"><input id="submit" name="submit" type="submit" class="btn btn-large" value="Send">
+				</div>
+			</form>	
+		</div>				
+	</div>-->
+	
+	<!--Footer-->
+	
+	<div class="footer" id="foot">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<h3>Get In Touch</h3>
+					<p>I'd love to hear from you about opportunities in tech, questions about me, and feedback on my projects! 
+					</p>
+				</div>
+				<div class="col-sm-5">
+					<h3>Contact me</h3>
+					<div class="row">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-8"><i class="icon fa fa-phone fa-1x"></i> (970) 433-8140</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-8"><i class="icon fa fa-envelope fa-1x"></i>	larissa.cox@duke.edu</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<h3>Find Me Around the Web</h3>
+					<div class="row">
+						<a href="https://www.linkedin.com/in/larissacox"><i class="icon fa fa-linkedin-square fa-3x"></i></a>
+						<a href="https://github.com/lmc64"><i class="icon fa fa-github-square fa-3x"></i></a>
+					</div>
+				</div>
+		</div>
+	</div> 
+	
+	
+	
+</body>
+
+</html>
+		
+		
+		
+				
+					

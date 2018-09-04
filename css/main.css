@@ -14,6 +14,17 @@ p{
 	overflow:hidden;
 }
 
+.jumbotron .img-container {
+    min-width: 290px;
+    min-height: auto;
+    max-width: 100%;
+}
+
+.jumbotron img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .inverse {
 	background-color:#35404f !important;
 	color: white !important;
@@ -70,6 +81,10 @@ h4 {
     padding: 20px;
 }
 
+#bio .container-fluid {
+    max-width: 700px;
+}
+
 .projects {
     size:100%;
     padding: 0;
@@ -88,7 +103,7 @@ h4 {
     display:block;
     float: left;
     height:260px;
-    width: 260px;
+    width: 230px;
     text-align: center;
     transition: all 0.2s ease-in-out;
 }
@@ -96,6 +111,12 @@ h4 {
 .centered {
     align-items: center;
 }
+
+.projects .container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .projects .project1 {
     background: #a3d39c;
 }
@@ -114,7 +135,9 @@ h4 {
     font-size:22pt;
     text-decoration: none;
     display: block;
-    padding:15px;
+    padding-top:0;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .projects li i {
     margin-top: 50px;
@@ -326,6 +349,7 @@ input.btn:hover{
     color:#777;;
     background-color:#222222;
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .footer ul{
@@ -350,4 +374,8 @@ input.btn:hover{
 
 .footer .footer-col{
     padding-top: 15px;
+}
+
+.round{
+    border-radius: 30px;
 }

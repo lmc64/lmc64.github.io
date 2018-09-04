@@ -14,13 +14,16 @@
 	
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">>
-	
-	<!--JQuery JS-->
-	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	 
-	<!--Bootstrap JS-->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		
 	<!--Font Awesome Fonts and Icons-->
 	<script src="https://use.fontawesome.com/f9ba6b20c2.js"></script> 
 
@@ -61,7 +64,9 @@
 	
 	<div class="jumbotron inverse">
 		<div class="container">
-			<img class="img-circle" src="img/professional_square.jpg" height="400px">
+			<div class="img-container">
+				<img class="img-circle" src="img/professional_square.jpg" height="400px">
+			</div>
 			<h1>Larissa Cox</h1>
 			<hr>
 			<p>	<span> Software Developer - </span>
@@ -77,14 +82,17 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6 text-center">
-				<img class="img" src="img/standing_wide.jpg" width="100%">
+				<img class="round" src="img/standing_wide.jpg" width="100%">
 			</div>
 			<div class="col-lg-6">
 				<h1 align="center">Hi, I'm Larissa Cox </h1>
-				<p align="center">I'm a web designer, developer, and program manager with experience at organizations such as Microsoft and the Duke Center for Instructional Technology.
-					<br><br> 
-					I'm currently a Senior at Duke University pursuing a Bachelor of Science in Computer Science and a minor in Gender Studies, and looking for a full-time position as a software engineer or product manager.
-				</p> 
+				<hr>
+				<div class="container-fluid">
+					<p align="center">I'm a web designer, developer, and program manager with experience at organizations such as Microsoft and the Duke Center for Instructional Technology.
+						<br><br> 
+						I'm currently a Senior at Duke University pursuing a Bachelor of Science in Computer Science and a minor in Gender Studies, and looking for a full-time position as a software engineer or product manager.
+					</p> 
+				</div>
 			</div>
 			<div class="col-sm-1">
 			</div>
@@ -95,7 +103,7 @@
 <!--Highlights-->
 	<div class="inverse" id="highlight">
 		<div class="container">
-			<h1>What I Do</h1>
+			<h1 align="center" >What I Do</h1>
 			<hr>
 			<div class="row">
 				<div class="col-sm-6 item">
@@ -143,11 +151,10 @@
 	
 	<div class="gray" id="portfolio">
 		<div class="container">
-			<h1>My Portfolio</h1>
+			<h1 align="center">My Portfolio</h1>
 			<hr>
-			<div class="projects">
-				
-				<ul>
+			<div class="projects container">
+				<ul class="container">
 					<a href="#vooga" data-target="#vooga" data-toggle="modal">
 						<li class="project1 img">
 						 <i class="icon fa fa-gamepad fa-4x"></i><b>Game Authoring Environment</b>
@@ -433,7 +440,7 @@
 	<!--Footer-->
 	
 	<div class="footer" id="foot">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-4">
 					<h3>Get In Touch</h3>
